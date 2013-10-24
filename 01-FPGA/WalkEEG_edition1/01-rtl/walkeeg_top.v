@@ -69,7 +69,7 @@ module walkeeg_top(
 	 output ram_chip_sel2,      //RAM 2
 		
 		//test port         ²âÊÔ¿Ú
-	 	output gpio
+	 	//output gpio
     
     );
 
@@ -654,7 +654,7 @@ IOBUF USBIO_inst15 (
       .T(slwr)      // 3-state enable input 
    );
 
-/////////////////RAM data Bus declear/////////////
+/////////////////RAM data Bus declear////////////  /
 IOBUF RAMIO_inst0 (
       .O(ram_data_in[0]),     // Buffer output
       .IO(ramdata[0]),   // Buffer inout port (connect directly to top-level port)
